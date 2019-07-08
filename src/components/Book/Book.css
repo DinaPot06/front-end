@@ -1,0 +1,30 @@
+.tekst{
+    margin-right: 70px;
+    text-align: right;
+    overflow: auto;
+    border: 3px solid rgba(23, 21, 32, 0.27);
+    padding: 5px;
+    margin-top: 50px;
+    background-color: white;
+}
+.slika{
+    margin-top: 100px;
+    float: left;
+    overflow: visible;
+    margin-left: 10px;
+}
+.Book{
+    background-color: rgba(141, 131, 155, 0.09);
+}
+.rez{
+    margin-top:-320px;
+    width: 300px;
+    height:400px;
+    overflow: visible;
+}
+
+.nesto{
+    display: inline;
+    border: black;
+    overflow: auto;
+}

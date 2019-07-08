@@ -1,17 +1,17 @@
 import React from 'react';
-import Search from "../Search/Search";
 import "./Home.css";
-import { Layout, Menu, Breadcrumb, Icon, Switch } from 'antd';
+import Background from '../../book.jpg';
+import {Icon} from 'antd';
 
 const Home = () => {
     return (
-        <div>
-            <Search/>
+        <div className="body">
+            <h1 className="name"> Book <br/> Store </h1>
             <div className="buy" >
                 <a href="/book"> <Icon type="plus-circle" theme="twoTone" /> </a>
             </div>
 
-
+                <img src={Background} className="pic" />
         </div>
     );
 };

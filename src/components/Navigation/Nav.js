@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Layout, Menu, Breadcrumb, Icon, Switch } from 'antd';
+import { Icon } from 'antd';
 
 function Nav() {
     const navStyle ={
-        color: 'white'
+        color: 'white',
+        fontWeight: '100'
     };
     return (
-
-                <nav>
+                <nav className="navi">
                     <ul className="nav-links">
                         <Link style={navStyle} to="/">
                         <br/>
@@ -16,7 +16,7 @@ function Nav() {
                         </Link>
                         <Link style={navStyle} to="/book">
                             <br/>
-                            <Icon type="book" />
+                            <Icon type="book"/>
                         </Link>
                         <Link style={navStyle} to="/order">
                             <br/>
@@ -26,14 +26,13 @@ function Nav() {
                             <br/>
                             <Icon type="user" />
                         </Link>
-                        <Link style={navStyle} to="/signin">
+                        <Link style={navStyle} to="/register">
                             <br/>
-                            <li> Sign In</li>
+                            <li>Register</li>
                         </Link>
-
                     </ul>
-                </nav>
 
+                </nav>
     );
 }
 

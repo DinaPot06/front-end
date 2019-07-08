@@ -43,7 +43,7 @@ class LogIn extends React.Component {
                         Log in
                     </Button>
                     <br/>
-                    Or <a href="/signin">register now!</a>
+                    Or <a href="/register">register now!</a>
 
                 </Form.Item>
             </Form>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Button} from "antd";
 
 const { API_KEY } = process.env
-const API_URL = 'http://57c62fdcc1fc8711008f2a7e.mockapi.io/api/book';
+const API_URL = 'http://localhost:2839/book/GetAllBooks';
 
 class Search extends Component {
     state = {
@@ -11,7 +12,7 @@ class Search extends Component {
     }
 
     getInfo = () => {
-        axios.get(`${'http://57c62fdcc1fc8711008f2a7e.mockapi.io/api/book'}?api_key=${process.env}&prefix=${this.state.query}&limit=7`)
+        axios.get(`${'http://localhost:2839/book/GetAllBooks'}?api_key=${process.env}&prefix=${this.state.query}&limit=7`)
             .then(({ data }) => {
                 this.setState({
                     results: data.data

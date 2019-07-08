@@ -8,8 +8,8 @@ import {
     AutoComplete,
 } from 'antd';
 
-const { Option } = Select;
-const AutoCompleteOption = AutoComplete.Option;
+//const { Option } = Select;
+//const AutoCompleteOption = AutoComplete.Option;
 
 class RegistrationForm extends React.Component {
     state = {
@@ -48,15 +48,6 @@ class RegistrationForm extends React.Component {
         callback();
     };
 
-    handleWebsiteChange = value => {
-        let autoCompleteResult;
-        if (!value) {
-            autoCompleteResult = [];
-        } else {
-            autoCompleteResult = ['.com', '.org', '.net'].map(domain => `${value}${domain}`);
-        }
-        this.setState({ autoCompleteResult });
-    };
 
     render() {
 
@@ -91,7 +82,7 @@ class RegistrationForm extends React.Component {
                 return (
 
             <Form {...formItemLayout} onSubmit={this.handleSubmit}>
-                <h1> Sign in</h1>
+                <h1> Register </h1>
                 <br/>
                 <Form.Item label="First Name">
                     {getFieldDecorator('firstname', {

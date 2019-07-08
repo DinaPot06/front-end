@@ -1,15 +1,15 @@
 import React from 'react';
 import Login from "../LogIn/LogIn";
 import BookRepository from "../../repository/BookRepository";
+import './User.css';
 
 
 
 function User() {
     return (
         <div className="User">
-            <h1>User</h1>
+            <h1>Log In</h1>
             <Login/>
-
         </div>
     );
 }

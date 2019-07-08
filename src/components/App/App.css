@@ -2,24 +2,32 @@
   text-align: center;
 }
 
-nav {
+.navi {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 6vh;
   background: #494f52;
   color: white;
+  height: 40px;
+  position: sticky;
+  top:0;
 }
 
 .nav-links{
-  width: 40%;
+  width:100%;
   display:flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  position: fixed;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
 
 }
 
-
-
-
+.nav-links a:hover {
+  background: #ddd;
+  color: black;
+}
